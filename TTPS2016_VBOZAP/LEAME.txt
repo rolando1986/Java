@@ -1,0 +1,15 @@
+Pasos para correr los test
+- Crear la base de datos vbozap
+- Modificar las propiedades siguientes dentro del archivo persistence.xml
+	<property name="javax.persistence.jdbc.user" value="USUARIO"/>
+	<property name="javax.persistence.jdbc.password" value="CLAVE"/>
+- Realizar un mvn clean install (esto corre todos los test) o solo mvn test
+Tambien se pueden ejecutar los test ejecutando como java application la clase TestRunner o ejecutar los test individuales haciendo click derecho sobre cada test y darle Run as -> JUnit Test
+
+-------------------------------------------------
+Cobertura (Indica que esta probado del codigo)
+mvn cobertura:cobertura
+html generado en \TTPS2016_VBOZAP\target\site\index.html
+-------------------------------------------------
+Dentro del path \TTPS2016_VBOZAP\documentacion se encuentra el diagrama de clases
+del modelo
